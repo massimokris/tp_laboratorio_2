@@ -4,3 +4,9 @@ C:\Users\mdiberardino\source\repos\Entidades\Entidades\obj\Debug\Entidades.cspro
 C:\Users\mdiberardino\source\repos\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\mdiberardino\source\repos\Entidades\Entidades\obj\Debug\Entidades.dll
 C:\Users\mdiberardino\source\repos\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.pdb

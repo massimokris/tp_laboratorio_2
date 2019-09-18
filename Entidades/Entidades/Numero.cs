@@ -68,33 +68,34 @@ namespace Entidades
         /// <returns>numero convertido en binario o respuesta de error</returns>
         public static string DecimalBinario(double num)
         {
-            double resto = 0;
-            double resultado = 0;
+            int modulo = 0;
+            int resultado = 0;
             string binario = "";
-            string nuevoBinario = "";
+            string auxBinario = "";
             StringBuilder aux = new StringBuilder("");
 
-            if (num != 1)
+            if (num > 1)
             {
-                resultado = num;
+                resultado = (int)num;
 
-                while (resultado / 2 > 1)
+                while (resultado / 2 != 1)
                 {
-                    resto = resultado % 2;
-                    aux.Append(resto.ToString());
+                    modulo = resultado % 2;
+                    aux.Append(modulo.ToString());
+
                     resultado = resultado / 2;
                 }
 
-                resto = resultado % 2;
+                modulo = resultado % 2;
                 resultado = resultado / 2;
 
-                aux.Append(resto.ToString());
+                aux.Append(modulo.ToString());
                 aux.Append(resultado.ToString());
-                nuevoBinario = aux.ToString();
+                auxBinario = aux.ToString();
 
-                for (int i = nuevoBinario.Length - 1; i >= 0; i--)
+                for (int i = auxBinario.Length - 1; i >= 0; i--)
                 {
-                    binario += nuevoBinario[i];
+                    binario += auxBinario[i];
                 }
             }
             else
@@ -105,6 +106,7 @@ namespace Entidades
             return binario;
         }
 
+
         /// <summary>
         /// Recive un string como numero decimal y lo convierte a binario en caso de no poder retorna "Valor Inválido"
         /// </summary>
@@ -112,16 +114,44 @@ namespace Entidades
         /// <returns>string convertido en binario o respuesta de error</returns>
         public static string DecimalBinario(string str)
         {
+            string binario = "Valor invalido";
+            string nuevoBinario = "";
             double num;
-            string binario = "Valor Inválido";
+            int resto;
+            int i;
 
             if (double.TryParse(str, out num))
             {
+                num = Math.Truncate(Math.Abs(num));
                 binario = DecimalBinario(num);
+
+                if (binario.Length >= 5)
+                {
+                    resto = binario.Length % 4;
+                    for (i = 0; i < resto; i++)
+                    {
+                        nuevoBinario += binario[i];
+                    }
+
+                    nuevoBinario += ' ';
+                    for (int j = 0; i < binario.Length; i++, j++)
+                    {
+                        nuevoBinario += binario[i];
+                        if (j == 3)
+                        {
+                            if (i != binario.Length - 1)
+                            {
+                                nuevoBinario += ' ';
+                            }
+
+                            j = -1;
+                        }
+                    }
+                    binario = nuevoBinario;
+                }
             }
 
             return binario;
-
         }
 
         /// <summary>
@@ -131,29 +161,38 @@ namespace Entidades
         /// <returns>string numerico decimal o mensaje de error</returns>
         public static string BinarioDecimal(string num)
         {
+            double acumulador = 0;
+            string decima = "Valor invalido";
+            string binario;
+            int i;
 
-            string response = "0";
-
-            char[] array = num.ToCharArray();
-
-            Array.Reverse(array);
-
-            for (int i = 0; i < array.Length; i++)
+            if (num != "")
             {
+                binario = num.Replace(" ", "");
 
-                if (array[i] == '1')
+                for (i = 0; i < binario.Length; i++)
                 {
+                    if (binario[i] != '1' && binario[i] != '0')
+                    {
+                        break;
+                    }
+                }
 
-                    response += (int)Math.Pow(2, i);
+                if (i == binario.Length)
+                {
+                    for (int j = binario.Length - 1, exp = 0; j >= 0; j--, exp++)
+                    {
+                        if (binario[j] == '1')
+                        {
+                            acumulador += Math.Pow(2, exp);
+                        }
+                    }
+
+                    decima = acumulador.ToString();
                 }
             }
 
-            if(response == "0" && num != "0")
-            {
-                response = "Valor Inválido";
-            }
-
-            return response;
+            return decima;
         }
         #endregion
 

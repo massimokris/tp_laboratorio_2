@@ -39,7 +39,7 @@ namespace Entidades_2018
         /// Muestro el Changuito y TODOS los Productos
         /// </summary>
         /// <returns>Descripcion de todo el changuito con su contenido</returns>
-        public string ToString()
+        public override string ToString()
         {
             return Mostrar(this, ETipo.Todos);
         }

@@ -24,3 +24,13 @@ C:\Users\mdiberardino\Desktop\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
 C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
 C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
 C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\bin\Debug\TP-02.exe
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\bin\Debug\TP-02.pdb
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\bin\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\bin\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\TP-02\obj\Debug\TP-02.pdb

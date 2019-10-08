@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace Entidades_2018
 {
-    class Leche : Producto
+    public class Leche : Producto
     {
         
         ETipo tipo;

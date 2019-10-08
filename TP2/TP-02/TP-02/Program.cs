@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entidades_2018;
 
 namespace TP_02_2018
 {
@@ -15,18 +16,18 @@ namespace TP_02_2018
             Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight - 2);
 
             // Nombre del alumno
-            Console.
+            Console.Title = "Massimo Di Berardino - 2C";
 
             Changuito changoDeCompras = new Changuito(6);
 
-            Dulce c1 = new Dulce(Producto.EMarca.Sancor, "ASD012", ConsoleColor.Black);
-            Dulce c2 = new Dulce(Producto.EMarca.Ilolay, "ASD913", ConsoleColor.Red);
-            Leche m1 = new Leche(Producto.EMarca.Pepsico, "HJK789", ConsoleColor.White);
-            Leche m2 = new Leche(Producto.EMarca.Serenisima, "IOP852", ConsoleColor.Blue, Leche.ETipo.Descremada);
-            Snacks a1 = new Snacks(Producto.EMarca.Campagnola, "QWE968", ConsoleColor.Gray);
-            Snacks a2 = new Snacks(Producto.EMarca.Arcor, "TYU426", ConsoleColor.DarkBlue);
-            Snacks a3 = new Snacks(Producto.EMarca.Sancor, "IOP852", ConsoleColor.Green);
-            Snacks a4 = new Snacks(Producto.EMarca.Sancor, "TRE321", ConsoleColor.Green);
+            Dulce c1 = new Dulce("ASD012", Producto.EMarca.Sancor, ConsoleColor.Black);
+            Dulce c2 = new Dulce("ASD913", Producto.EMarca.Ilolay, ConsoleColor.Red);
+            Leche m1 = new Leche("HJK789", Producto.EMarca.Pepsico, ConsoleColor.White);
+            Leche m2 = new Leche("IOP852", Producto.EMarca.Serenisima, ConsoleColor.Blue, Leche.ETipo.Descremada);
+            Snacks a1 = new Snacks("QWE968", Producto.EMarca.Campagnola, ConsoleColor.Gray);
+            Snacks a2 = new Snacks("TYU426", Producto.EMarca.Arcor, ConsoleColor.DarkBlue);
+            Snacks a3 = new Snacks("IOP852", Producto.EMarca.Sancor, ConsoleColor.Green);
+            Snacks a4 = new Snacks("TRE321", Producto.EMarca.Sancor, ConsoleColor.Green);
 
             // Agrego 8 ítems (los últimos 2 no deberían poder agregarse ni el m1 repetido) y muestro
             changoDeCompras += c1;

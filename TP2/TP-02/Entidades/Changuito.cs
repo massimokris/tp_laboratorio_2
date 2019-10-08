@@ -93,7 +93,7 @@ namespace Entidades_2018
         public static Changuito operator +(Changuito c, Producto p)
         {
             if(!(c is null) && !(p is null) 
-                && c.productos.Exists( x => x == p) 
+                && !c.productos.Exists( x => x == p) 
                 && c.productos.Count < c.espacioDisponible )
             {
                 c.productos.Add(p);

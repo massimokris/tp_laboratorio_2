@@ -6,5 +6,7 @@ namespace Excepciones
 {
     public class SinProfesorException : Exception
     {
+
+        public AlumnoRepetidoException () { }
     }
 }

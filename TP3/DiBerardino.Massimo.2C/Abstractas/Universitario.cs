@@ -10,9 +10,9 @@ namespace Abstractas
 
         #region CONSTRUCTORES
 
-        Universitario () { }
+        public Universitario () { }
 
-        Universitario (int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base (nombre, apellido, dni, nacionalidad)
+        public Universitario (int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base (nombre, apellido, dni, nacionalidad)
         {
             this.legajo = legajo;
         }
@@ -21,9 +21,15 @@ namespace Abstractas
 
         #region OPERADORES
 
-        public static bool operator ==(Universitario pg1, Universitario pg2) { }
+        public static bool operator ==(Universitario pg1, Universitario pg2)
+        {
+            return (Object.ReferenceEquals(pg1.GetType(), pg2.GetType()) && pg1.legajo.Equals(pg2.legajo));
+        }
 
-        public static bool operator !=(Universitario pg1, Universitario pg2) { }
+        public static bool operator !=(Universitario pg1, Universitario pg2)
+        {
+            return !(pg1 == pg2);
+        }
 
         #endregion
 
@@ -38,9 +44,15 @@ namespace Abstractas
 
         #region METODOS 
 
-        protected string MostrarDatos () { }
+        protected virtual string MostrarDatos ()
+        {
+            StringBuilder st = new StringBuilder(base.ToString());
+            st.AppendLine($"Legajo: {this.legajo}");
 
-        protected string ParticiparEnClase () { }
+            return st.ToString();
+        }
+
+        protected abstract string ParticiparEnClase();
 
         #endregion
     }

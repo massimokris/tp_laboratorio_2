@@ -8,7 +8,7 @@ namespace Instanciables
     {
 
         private List<Alumno> alumnos;
-        private EClases clases;
+        private Universidad.EClases clase;
         private Profesor instructor;
 
         #region PROPIEDADES
@@ -19,7 +19,7 @@ namespace Instanciables
             set;
         }
 
-        public EClases Clase
+        public Universidad.EClases Clase
         {
             get;
             set;
@@ -37,7 +37,12 @@ namespace Instanciables
 
         private Jornada () { }
 
-        public Jornada (EClases clase, Profesor profesor) { }
+        public Jornada (Universidad.EClases clase, Profesor profesor)
+        {
+            alumnos = new List<Alumno>();
+            this.clase = clase;
+            this.instructor = profesor;
+        }
 
         #endregion
 
@@ -62,7 +67,7 @@ namespace Instanciables
 
         #region METODOS
 
-        public bool Guardad (Jornada jornada) { }
+        public bool Guardar (Jornada jornada) { }
 
         public string Leer () { }
 

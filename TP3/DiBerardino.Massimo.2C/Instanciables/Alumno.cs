@@ -1,29 +1,42 @@
 ﻿using System;
 using Abstractas;
+using System.Text;
 
 namespace Instanciables
 {
     sealed class Alumno : Universitario
     {
 
-        private EClases claseQueToma;
+        private Universidad.EClases claseQueToma;
         private EEstadoCuenta estadoCuenta;
 
         #region CONSTRUCTORES
 
-        Alumno () { }
+        public Alumno () { }
 
-        Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, EClases claseQueToma) { }
+        public Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma) : base (id, nombre, apellido, dni, nacionalidad)
+        {
+            this.claseQueToma = claseQueToma;
+        }
 
-        Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, EClases claseQueToma, EEstadoCuenta estadoCuenta) { }
+        public Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma, EEstadoCuenta estadoCuenta) : this (id, nombre, apellido, dni, nacionalidad, claseQueToma)
+        {
+            this.estadoCuenta = estadoCuenta;
+        }
 
         #endregion
 
         #region OPERADORES
 
-        public static bool operator ==(Alumno a, EClases clase) { }
+        public static bool operator ==(Alumno a, Universidad.EClases clase)
+        {
+            return (a.claseQueToma.Equals(clase) && a.estadoCuenta != EEstadoCuenta.Deudor);
+        }
 
-        public static bool operator !=(Alumno a, EClases clase) { }
+        public static bool operator !=(Alumno a, Universidad.EClases clase)
+        {
+            return !(a == clase);
+        }
 
         #endregion
 
@@ -31,16 +44,29 @@ namespace Instanciables
 
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder sb = new StringBuilder(this.MostrarDatos());
+           
+            return sb.ToString();
         }
 
         #endregion
 
         #region METODOS
 
-        protected string MostrarDatos () { }
+        protected new string MostrarDatos ()
+        {
+            StringBuilder sb = new StringBuilder(base.MostrarDatos());
+            sb.AppendLine(this.ParticiparEnClase());
+            sb.AppendLine($"Estado de cuenta: {this.estadoCuenta}");
+            return sb.ToString();
+        }
 
-        protected string ParticiparEnClase () { }
+        protected string ParticiparEnClase ()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Toma clase de: {this.claseQueToma}");
+            return sb.ToString();
+        }
 
         #endregion
 

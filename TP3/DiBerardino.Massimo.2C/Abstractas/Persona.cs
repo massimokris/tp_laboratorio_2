@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Abstractas
 {
@@ -10,21 +11,21 @@ namespace Abstractas
     {
 
         private string apellido;
+        private string nombre;
         private int dni;
         private ENacionalidad nacionalidad;
-        private string nombre;
 
         #region PROPRIEDADES
         public string Apellido
         {
             get { return this.apellido; }
-            set { this.apellido = value; }
+            set { this.apellido = ValidarNombreApellido(value); }
         }
 
         public int DNI
         {
             get { return this.dni; }
-            set;
+            set { this.dni = ValidarDni(this.nacionalidad, value); }
         }
 
         public ENacionalidad Nacionalidad
@@ -36,12 +37,12 @@ namespace Abstractas
         public string Nombre
         {
             get { return this.nombre; }
-            set;
+            set { this.nombre = ValidarNombreApellido(value); }
         }
 
         public string StringToDNI
         {
-            set;
+            set { this.dni = ValidarDni(this.nacionalidad, value); }
         }
         #endregion
 
@@ -76,7 +77,7 @@ namespace Abstractas
             sb.AppendLine($"Nombre completo: {this.apellido}, {this.nombre}");
             sb.AppendLine($"Nacionalidad: {this.nacionalidad}");
             sb.AppendLine($"DNI: {this.dni}");
-            return base.ToString();
+            return sb.ToString();
         }
 
         #endregion
@@ -87,19 +88,16 @@ namespace Abstractas
         {
             int validar = 0;
 
-            if(nacionalidad == ENacionalidad.Argentino)
+            if (nacionalidad == ENacionalidad.Argentino)
             {
-                if(dato >= 1 && dato <= 89999999)
+                if (dato >= 1 && dato <= 89999999)
                 {
-                    validar = 1;
+                    validar = dato;
                 }
             }
-            else
+            else if (dato >= 90000000 && dato <= 99999999)
             {
-                if(dato >= 90000000 && dato <= 99999999)
-                {
-                    validar = 1;
-                }
+                validar = dato;
             }
 
             return validar;
@@ -119,7 +117,15 @@ namespace Abstractas
 
         private string ValidarNombreApellido (string dato)
         {
+            string validar = "No es un nombre valido";
+            string pattern = @"[a-zA-Z]";
+            Regex rx = new Regex(pattern);
+            if (rx.IsMatch(dato))
+            {
+                validar = dato;
+            }
 
+            return validar;
         }
 
         #endregion

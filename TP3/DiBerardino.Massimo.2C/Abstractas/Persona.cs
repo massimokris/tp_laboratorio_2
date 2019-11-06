@@ -52,19 +52,19 @@ namespace Abstractas
 
         public Persona (string nombre, string apellido, ENacionalidad nacionalidad)
         {
-            Nombre = nombre;
-            Apellido = apellido;
-            Nacionalidad = nacionalidad;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Nacionalidad = nacionalidad;
         }
 
         public Persona (string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this (nombre, apellido, nacionalidad)
         {
-            DNI = dni;
+            this.DNI = dni;
         }
 
         public Persona (string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this (nombre, apellido, nacionalidad)
         {
-            StringToDNI = dni;
+            this.StringToDNI = dni;
         }
 
         #endregion

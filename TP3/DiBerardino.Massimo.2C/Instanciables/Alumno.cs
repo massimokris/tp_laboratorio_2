@@ -35,7 +35,7 @@ namespace Instanciables
 
         public static bool operator !=(Alumno a, Universidad.EClases clase)
         {
-            return !(a == clase);
+            return !(a.claseQueToma.Equals(clase));
         }
 
         #endregion

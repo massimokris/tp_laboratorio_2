@@ -1,0 +1,9 @@
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\bin\Debug\netstandard2.0\Excepciones.deps.json
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\obj\Debug\netstandard2.0\Excepciones.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\obj\Debug\netstandard2.0\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\obj\Debug\netstandard2.0\Excepciones.AssemblyInfoInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\obj\Debug\netstandard2.0\Excepciones.AssemblyInfo.cs
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\obj\Debug\netstandard2.0\Excepciones.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Excepciones\obj\Debug\netstandard2.0\Excepciones.pdb

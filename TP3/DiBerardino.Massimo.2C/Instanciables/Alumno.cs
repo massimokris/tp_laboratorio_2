@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Instanciables
 {
-    sealed class Alumno : Universitario
+    public sealed class Alumno : Universitario
     {
 
         private Universidad.EClases claseQueToma;
@@ -12,16 +12,14 @@ namespace Instanciables
 
         #region CONSTRUCTORES
 
-        public Alumno () { }
+        public Alumno () : base () { }
 
-        public Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma) : base (id, nombre, apellido, dni, nacionalidad)
-        {
-            this.claseQueToma = claseQueToma;
-        }
+        public Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma) : base (id, nombre, apellido, dni, nacionalidad) { }
 
         public Alumno (int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma, EEstadoCuenta estadoCuenta) : this (id, nombre, apellido, dni, nacionalidad, claseQueToma)
         {
             this.estadoCuenta = estadoCuenta;
+            this.claseQueToma = claseQueToma;
         }
 
         #endregion
@@ -30,12 +28,12 @@ namespace Instanciables
 
         public static bool operator ==(Alumno a, Universidad.EClases clase)
         {
-            return (a.claseQueToma.Equals(clase) && a.estadoCuenta != EEstadoCuenta.Deudor);
+            return (a.claseQueToma == clase && a.estadoCuenta != EEstadoCuenta.Deudor);
         }
 
         public static bool operator !=(Alumno a, Universidad.EClases clase)
         {
-            return !(a.claseQueToma.Equals(clase));
+            return (a.claseQueToma != clase);
         }
 
         #endregion
@@ -53,7 +51,7 @@ namespace Instanciables
 
         #region METODOS
 
-        protected new string MostrarDatos ()
+        protected new string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder(base.MostrarDatos());
             sb.AppendLine(this.ParticiparEnClase());
@@ -61,7 +59,7 @@ namespace Instanciables
             return sb.ToString();
         }
 
-        protected string ParticiparEnClase ()
+        protected override string ParticiparEnClase ()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Toma clase de: {this.claseQueToma}");

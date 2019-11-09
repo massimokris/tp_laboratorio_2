@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using Excepciones;
 
 namespace Abstractas
 {
@@ -76,7 +77,7 @@ namespace Abstractas
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Nombre completo: {this.apellido}, {this.nombre}");
             sb.AppendLine($"Nacionalidad: {this.nacionalidad}");
-            sb.AppendLine($"DNI: {this.dni}");
+            //sb.AppendLine($"DNI: {this.dni}");
             return sb.ToString();
         }
 
@@ -87,7 +88,6 @@ namespace Abstractas
         private int ValidarDni (ENacionalidad nacionalidad, int dato)
         {
             int validar = 0;
-
             if (nacionalidad == ENacionalidad.Argentino)
             {
                 if (dato >= 1 && dato <= 89999999)
@@ -98,6 +98,10 @@ namespace Abstractas
             else if (dato >= 90000000 && dato <= 99999999)
             {
                 validar = dato;
+            }
+            else
+            {
+                throw new NacionalidadInvalidaException();
             }
 
             return validar;
@@ -111,6 +115,10 @@ namespace Abstractas
             {
                 validar = ValidarDni(nacionalidad, dni);
             }
+            else
+            {
+                throw new DniInvalidoException();
+            }
 
             return validar;
         }
@@ -118,7 +126,7 @@ namespace Abstractas
         private string ValidarNombreApellido (string dato)
         {
             string validar = "No es un nombre valido";
-            string pattern = @"[a-zA-Z]";
+            string pattern = @"^[a-zA-Z ]+$";
             Regex rx = new Regex(pattern);
             if (rx.IsMatch(dato))
             {

@@ -1,0 +1,16 @@
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.AssemblyInfoInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.AssemblyInfo.cs
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Instanciables.deps.json
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Instanciables.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Instanciables.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Abstractas.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Archivos.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Abstractas.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Archivos.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.csproj.CopyComplete
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Instanciables\obj\Debug\netstandard2.0\Instanciables.pdb

@@ -7,6 +7,6 @@ namespace Excepciones
     public class SinProfesorException : Exception
     {
 
-        public AlumnoRepetidoException () { }
+        public SinProfesorException () : base("Sin profesor disponible") { }
     }
 }

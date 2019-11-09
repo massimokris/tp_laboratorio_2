@@ -1,0 +1,12 @@
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\bin\Debug\netstandard2.0\Archivos.deps.json
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\bin\Debug\netstandard2.0\Archivos.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\bin\Debug\netstandard2.0\Archivos.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.AssemblyInfoInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.AssemblyInfo.cs
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.csproj.CopyComplete
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP3\DiBerardino.Massimo.2C\Archivos\obj\Debug\netstandard2.0\Archivos.pdb

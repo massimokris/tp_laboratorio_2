@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Archivos;
 
 namespace Instanciables
 {
@@ -15,31 +16,33 @@ namespace Instanciables
 
         public List<Alumno> Alumnos
         {
-            get;
-            set;
+            get { return this.alumnos; }
+            set { this.alumnos = value; }
         }
 
         public Universidad.EClases Clase
         {
-            get;
-            set;
+            get { return this.clase; }
+            set { this.clase = value; }
         }
 
         public Profesor Instructor
         {
-            get;
-            set;
+            get { return this.instructor; }
+            set { this.instructor = value; }
         }
 
         #endregion
 
         #region CONSTRUCTORES
 
-        private Jornada () { }
-
-        public Jornada (Universidad.EClases clase, Profesor profesor)
+        private Jornada ()
         {
-            alumnos = new List<Alumno>();
+            this.alumnos = new List<Alumno>();
+        }
+
+        public Jornada(Universidad.EClases clase, Profesor profesor) : this()
+        {
             this.clase = clase;
             this.instructor = profesor;
         }
@@ -48,11 +51,26 @@ namespace Instanciables
 
         #region OPERADORES
 
-        public static bool operator ==(Jornada j, Alumno a) { }
+        public static bool operator ==(Jornada j, Alumno a)
+        {
+            
+            return j.Alumnos.Contains(a);
+        }
 
-        public static bool operator !=(Jornada j, Alumno a) { }
+        public static bool operator !=(Jornada j, Alumno a)
+        {
+            return !(j == a);
+        }
 
-        public static Jornada operator +(Jornada j, Alumno a) { }
+        public static Jornada operator +(Jornada j, Alumno a)
+        {
+            if(j != a)
+            {
+                j.alumnos.Add(a);
+            }
+
+            return j;
+        }
 
         #endregion
 
@@ -60,16 +78,37 @@ namespace Instanciables
 
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Jornada:");
+            sb.AppendLine($"Clase: {this.clase}");
+            sb.AppendLine($"Profesor: {this.instructor}");
+            sb.AppendLine("Alumnos:");
+            foreach (var item in this.alumnos)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            return sb.ToString();
         }
 
         #endregion
 
         #region METODOS
 
-        public bool Guardar (Jornada jornada) { }
+        public static bool Guardar (Jornada jornada)
+        {
+            Texto txt = new Texto();
+            return txt.Guardar("jornada", jornada.ToString());
+        }
 
-        public string Leer () { }
+        public static string Leer ()
+        {
+            string datos;
+
+            Texto archivoTexto = new Texto();
+            archivoTexto.Leer("jornada", out datos);
+
+            return datos;
+        }
 
         #endregion
     }

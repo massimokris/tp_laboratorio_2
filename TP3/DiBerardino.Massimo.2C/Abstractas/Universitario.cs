@@ -10,7 +10,7 @@ namespace Abstractas
 
         #region CONSTRUCTORES
 
-        public Universitario () { }
+        public Universitario () : base() { }
 
         public Universitario (int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base (nombre, apellido, dni, nacionalidad)
         {
@@ -23,7 +23,7 @@ namespace Abstractas
 
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
-            return (Object.ReferenceEquals(pg1.GetType(), pg2.GetType()) && pg1.legajo.Equals(pg2.legajo));
+            return pg1.GetType() == pg2.GetType() && (pg1.legajo.Equals(pg2.legajo) || pg1.DNI.Equals(pg2.DNI));
         }
 
         public static bool operator !=(Universitario pg1, Universitario pg2)
@@ -37,7 +37,7 @@ namespace Abstractas
 
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            return obj.GetType() == typeof(Universitario) &&  this == (Universitario)obj; ;
         }
 
         #endregion

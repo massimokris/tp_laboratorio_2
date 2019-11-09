@@ -29,11 +29,37 @@
       "Abstractas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Excepciones": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Abstractas.dll": {}
         },
         "runtime": {
           "bin/placeholder/Abstractas.dll": {}
+        }
+      },
+      "Archivos/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Excepciones": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Archivos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Archivos.dll": {}
+        }
+      },
+      "Excepciones/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Excepciones.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excepciones.dll": {}
         }
       }
     }
@@ -186,11 +212,23 @@
       "type": "project",
       "path": "../Abstractas/Abstractas.csproj",
       "msbuildProject": "../Abstractas/Abstractas.csproj"
+    },
+    "Archivos/1.0.0": {
+      "type": "project",
+      "path": "../Archivos/Archivos.csproj",
+      "msbuildProject": "../Archivos/Archivos.csproj"
+    },
+    "Excepciones/1.0.0": {
+      "type": "project",
+      "path": "../Excepciones/Excepciones.csproj",
+      "msbuildProject": "../Excepciones/Excepciones.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Abstractas >= 1.0.0",
+      "Archivos >= 1.0.0",
+      "Excepciones >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -226,6 +264,12 @@
           "projectReferences": {
             "C:\\Users\\mdiberardino\\Desktop\\tp_laboratorio_2\\TP3\\DiBerardino.Massimo.2C\\Abstractas\\Abstractas.csproj": {
               "projectPath": "C:\\Users\\mdiberardino\\Desktop\\tp_laboratorio_2\\TP3\\DiBerardino.Massimo.2C\\Abstractas\\Abstractas.csproj"
+            },
+            "C:\\Users\\mdiberardino\\Desktop\\tp_laboratorio_2\\TP3\\DiBerardino.Massimo.2C\\Archivos\\Archivos.csproj": {
+              "projectPath": "C:\\Users\\mdiberardino\\Desktop\\tp_laboratorio_2\\TP3\\DiBerardino.Massimo.2C\\Archivos\\Archivos.csproj"
+            },
+            "C:\\Users\\mdiberardino\\Desktop\\tp_laboratorio_2\\TP3\\DiBerardino.Massimo.2C\\Excepciones\\Excepciones.csproj": {
+              "projectPath": "C:\\Users\\mdiberardino\\Desktop\\tp_laboratorio_2\\TP3\\DiBerardino.Massimo.2C\\Excepciones\\Excepciones.csproj"
             }
           }
         }

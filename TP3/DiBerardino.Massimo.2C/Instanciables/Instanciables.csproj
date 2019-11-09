@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abstractas\Abstractas.csproj" />
+    <ProjectReference Include="..\Archivos\Archivos.csproj" />
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj" />
   </ItemGroup>
 
 </Project>

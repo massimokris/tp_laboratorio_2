@@ -24,3 +24,16 @@ C:\Users\mdiberardino\Desktop\TP1\Entidades\MiCalculadora\obj\Debug\MiCalculador
 C:\Users\mdiberardino\Desktop\TP1\Entidades\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
 C:\Users\mdiberardino\Desktop\TP1\Entidades\MiCalculadora\obj\Debug\MiCalculadora.exe
 C:\Users\mdiberardino\Desktop\TP1\Entidades\MiCalculadora\obj\Debug\MiCalculadora.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.exe
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\MiCalculadora.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.exe
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\MiCalculadora.pdb

@@ -12,18 +12,22 @@ namespace Entidades
         public static bool Guardar(this string texto, string archivo)
         {
             bool validation = true;
+            string ruta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), archivo);
+            bool append = File.Exists(ruta);
+            StreamWriter writer = new StreamWriter(ruta, append);
             try
             {
-                string ruta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), archivo);
-
-                using (StreamWriter writer = new StreamWriter(ruta))
-                {
-                    writer.WriteLine(texto, true);
-                }
+                writer.WriteLine(texto);
             }
             catch (Exception e)
             {
                 validation = false;
+                throw new Exception("Error al escribir el archivo", e);
+                
+            }
+            finally
+            {
+                writer.Close();
             }
             return validation;
         }

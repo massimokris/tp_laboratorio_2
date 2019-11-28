@@ -29,9 +29,16 @@ namespace MiCalculadora
             
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnOperar_Click(object sender, EventArgs e)
         {
-            labelResultado.Text = Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text).ToString();
+            if(String.IsNullOrEmpty(txtNumero1.Text) || String.IsNullOrEmpty(txtNumero2.Text))
+            {
+                labelResultado.Text = "Ingrese valores";
+            } else
+            {
+                labelResultado.Text = Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text).ToString();
+            }
+            
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)

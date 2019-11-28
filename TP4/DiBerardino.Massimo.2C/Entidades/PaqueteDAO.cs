@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    public delegate void DelegateSqlError(string message);
     public static class PaqueteDAO
     {
         private static SqlCommand comando;
         private static SqlConnection conexion;
+        public static event DelegateSqlError errorSql;
 
         static PaqueteDAO()
         {
@@ -24,16 +26,21 @@ namespace Entidades
         public static bool Insertar(Paquete p)
         {
             bool validation = true;
-            comando.CommandText = $"INSERT INTO dbo.Paquetes (direccionEntrega, trackingID, nombreAlumno)  VALUES('{p.DireccionEntrega}', '{p.TrakingID}', 'massimo di berardino')";
+            comando.CommandText = $"INSERT INTO dbo.Paquetes (direccionEntrega, trackingID, nombreAlumno)  VALUES('{p.DireccionEntrega}', '{p.TrackingID}', 'massimo di berardino')";
             try
             {
                 conexion.Open();
-                comando.ExecuteNonQuery();
+                validation = comando.ExecuteNonQuery() != 0 ? true : false; ;
             }
             catch (Exception e)
             {
+                errorSql.Invoke(e.Message);
                 validation = false;
                 throw e;
+            }
+            finally
+            {
+                conexion.Close();
             }
 
             return validation;

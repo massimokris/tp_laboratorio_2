@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DiBerardino.Massimo._2C.Properties
+namespace MainCorreo.Properties
 {
 
 

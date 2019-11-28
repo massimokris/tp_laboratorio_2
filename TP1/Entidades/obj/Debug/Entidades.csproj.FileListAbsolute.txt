@@ -10,3 +10,9 @@ C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.csproj
 C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.dll
 C:\Users\mdiberardino\Desktop\TP1\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\Entidades\bin\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\Entidades\obj\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP1\Entidades\obj\Debug\Entidades.pdb

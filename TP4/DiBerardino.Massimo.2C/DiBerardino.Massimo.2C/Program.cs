@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DiBerardino.Massimo._2C
+namespace MainCorreo
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace DiBerardino.Massimo._2C
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPpal());
+            Application.Run(new FrmPal());
         }
     }
 }

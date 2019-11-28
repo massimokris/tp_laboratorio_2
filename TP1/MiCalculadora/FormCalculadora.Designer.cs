@@ -92,7 +92,7 @@
             this.btnOperar.TabIndex = 3;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
-            this.btnOperar.Click += new System.EventHandler(this.Button1_Click);
+            this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
             // 
             // btnLimpiar
             // 

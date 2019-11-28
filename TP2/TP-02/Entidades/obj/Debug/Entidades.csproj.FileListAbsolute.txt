@@ -17,3 +17,9 @@ C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\Entidades\obj\
 C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\mdiberardino\Desktop\pruebatp\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb

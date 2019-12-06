@@ -8,6 +8,6 @@ namespace Entidades
 {
     public interface IMostrar<T>
     {
-        string MostratDatos(IMostrar<T> elemento);
+        string MostrarDatos(IMostrar<T> elemento);
     }
 } 

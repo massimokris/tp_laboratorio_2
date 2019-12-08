@@ -63,13 +63,14 @@ namespace Entidades
             {
                 Thread.Sleep(2000);
                 this.estado++;
-                this.InformarEstado.Invoke(this, new EventArgs());
+                this.InformarEstado.Invoke(this, null);
             }
             PaqueteDAO.Insertar(this);
         }
         public string MostrarDatos(IMostrar<Paquete> elemento)
         {
-            return String.Format("{0} para {1}", ((Paquete)elemento).trackingID, ((Paquete)elemento).direccionEntrega);
+            Paquete p = (Paquete)elemento;
+            return String.Format($"{p.TrackingID} para {p.DireccionEntrega}");
         }
         public override string ToString()
         {

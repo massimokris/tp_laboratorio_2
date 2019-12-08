@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Entidades
 {
-    public class Correo
+    public class Correo : IMostrar<List<Paquete>>
     {
 
         private List<Thread> mockPaquetes;
@@ -62,8 +62,8 @@ namespace Entidades
                     throw new TrackingIdRepetidoException($"El paquete {p.TrackingID} ya esta en el sistema con el estado de : {p.Estado}");
                 }
             }
-            c.paquetes.Add(p);
-            Thread t1 = new Thread(p.MockCicloVida);
+            c.paquetes.Add(p);      
+            Thread t1 = new Thread(p.MockCicloDeVida);
             c.mockPaquetes.Add(t1);
             try
             {

@@ -17,3 +17,15 @@ C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBera
 C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.exe
 C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.pdb
 C:\Users\mdiberardino\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.FrmPal.resources
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.csprojAssemblyReference.cache
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.FrmPal.resources
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.Properties.Resources.resources
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.csproj.GenerateResource.cache
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.exe
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.pdb
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\bin\Debug\MainCorreo.exe.config
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\bin\Debug\MainCorreo.exe
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\bin\Debug\MainCorreo.pdb
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\bin\Debug\Entidades.dll
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\bin\Debug\Entidades.pdb
+C:\Users\Massimo\Desktop\tp_laboratorio_2\TP4\DiBerardino.Massimo.2C\DiBerardino.Massimo.2C\obj\Debug\MainCorreo.csproj.CopyComplete

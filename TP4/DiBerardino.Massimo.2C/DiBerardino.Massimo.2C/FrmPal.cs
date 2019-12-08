@@ -12,12 +12,12 @@ namespace MainCorreo
 {
     public partial class FrmPal : Form
     {
-        private Correo cr;
+        Correo cr;
 
         /// <summary>
-        /// Pongo en el centro el form
+        /// centro el form
         /// Inicializo el correo
-        /// Agrego al evento errorsql el handler del evento
+        /// Agrego al errorsql el handler
         /// </summary>
         public FrmPal()
         {
@@ -31,8 +31,8 @@ namespace MainCorreo
 
         /// <summary>
         /// Genera un nuevo envio y lo agrega al correo
-        /// Si no pudo se muestra un messagebox por pantalla
-        /// Se actualizan los datos
+        /// en caso de error muestra un messagebox por pantalla
+        /// actualizan los datos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -53,25 +53,25 @@ namespace MainCorreo
             }
             else
             {
-                MessageBox.Show("Cargar los datos del envio de forma correcta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Cargar los datos de forma correcta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.ActualizarEstados();
         }
 
 
         /// <summary>
-        /// Se llama al metodo mostrardatos pasandole una lista de paquetes.
+        /// Muestra la lista de envios
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void BtnMostrar_Click(object sender, EventArgs e)
         {
-            this.MostrarDatos<List<Paquete>>((IMostrar<List<Paquete>>)this.cr);
+            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)cr);
         }
 
 
         /// <summary>
-        /// Agrega en listbox segun el estado actual del pedido
+        /// listbox segun el estado actual del envio
         /// </summary>
         private void ActualizarEstados()
         {
@@ -95,7 +95,7 @@ namespace MainCorreo
 
 
         /// <summary>
-        /// Handler del evento que se encarga de actualizar los estados cuando se invoca a los eventos.
+        /// handler que se encarga de actualizar los estados
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -103,7 +103,7 @@ namespace MainCorreo
         {
             if (this.InvokeRequired)
             {
-                Paquete.DelegadoEstado d = new Paquete.DelegadoEstado(paq_InformaEstado);
+                DelegadoEstado d = new DelegadoEstado(paq_InformaEstado);
                 this.Invoke(d, new object[] { sender, e });
             }
             else
@@ -114,7 +114,7 @@ namespace MainCorreo
         }
 
         /// <summary>
-        /// Handler del evento que si se llama es por que hubo un error y se encarga de mostrarlo por pantalla
+        /// handler que se encarga de mostrar los errores por pantalla
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -133,12 +133,11 @@ namespace MainCorreo
         }
 
         /// <summary>
-        /// Metodo que se encarga de mostrar info que se le pasa como parametro en el rich text box del form y guardar la info en un archivo en el desktop
-        /// Si sale algo mal lo muestra por pantalla.
+        /// mostrar info que se le pasa como parametro en el rich text box del form y guardar la info en un txt
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="e"></param>
-        public void MostrarDatos<T>(IMostrar<T> e)
+        public void MostrarInformacion<T>(IMostrar<T> e)
         {
             if (e != null && e is Correo || e is Paquete)
             {
@@ -156,7 +155,7 @@ namespace MainCorreo
 
 
         /// <summary>
-        /// Limpia todas las listbox
+        /// limpia las listbox
         /// </summary>
         private void limpiarListBox()
         {
@@ -167,7 +166,7 @@ namespace MainCorreo
 
 
         /// <summary>
-        /// Agrego un evento para que se invoque cuando se cierre el form que mate todos los threads 
+        /// evento que se invoca cuando se cierre el form y mate todos los threads 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -178,8 +177,7 @@ namespace MainCorreo
 
 
         /// <summary>
-        /// LLama al metodo mostrardatos pasandole un solo paquete que es seleccionado si y solo si el paquete esta en entregado
-        /// Si hubo un error al seleccionarlo se encarga de avisar por pantalla.
+        /// LLama al metodo mostrardatos pasandole un solo paquete que es seleccionado solo si el paquete esta entregado
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -187,11 +185,11 @@ namespace MainCorreo
         {
             try
             {
-                this.MostrarDatos<Paquete>((IMostrar<Paquete>)this.cr.Paquetes[this.lbxEntregado.SelectedIndex]);
+                this.MostrarInformacion<Paquete>((IMostrar<Paquete>)this.cr.Paquetes[this.lbxEntregado.SelectedIndex]);
             }
             catch (Exception)
             {
-                MessageBox.Show("Mas tranqui en elegir porfa", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Elegir mas lento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
